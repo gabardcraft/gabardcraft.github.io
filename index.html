@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>GabardCraft</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>GabardCraft</h1>
-<p>Le serveur Minecraft du collège</p>
+<header>
+  <h1>GabardCraft</h1>
+  <p>Le serveur Minecraft du collège</p>
+</header>
 
-<a href="#">Télécharger le launcher (FR)</a><br>
-<a href="#">Télécharger le launcher (EN)</a><br><br>
+<section class="top">
+  <div class="launchers">
+    <a class="btn green" href="#">Launcher FR</a>
+    <a class="btn green" href="#">Launcher EN</a>
+    <a class="btn blue" href="#">Lien du Modpack</a>
+  </div>
 
-<a href="#">Lien du modpack</a><br><br>
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/ID_DE_TA_VIDEO"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/ID_DE_TA_VIDEO"
-allowfullscreen></iframe>
+<section class="patchnotes">
+  <h2>📰 Patch Notes</h2>
+  <ul id="patch-list"></ul>
+</section>
 
-<h2>Patch notes</h2>
-
-<ul>
-  <li>
-    <a href="posts/maj-v1-2.html">
-      Mise à jour v1.2
-    </a>
-  </li>
-</ul>
-
-
+<script src="patchnotes.js"></script>
 </body>
 </html>
-
