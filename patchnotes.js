@@ -7,8 +7,8 @@ fetch("patchnotes.json")
       const li = document.createElement("li");
       li.innerHTML = `
         <a href="${post.link}">
-          <strong>${post.title}</strong>
-          <span>${post.date}</span>
+          <strong>${post.title}</strong><br>
+          <small>${post.date}</small>
         </a>
       `;
       list.appendChild(li);
