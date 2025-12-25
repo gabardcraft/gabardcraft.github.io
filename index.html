@@ -15,19 +15,19 @@
 <section class="top">
   <div class="launchers">
     <a class="btn green"
-       href="https://github.com/TONPSEUDO/MinegabardLauncher/releases/download/v1.0/MinegabardLauncher.exe"
+       href="https://github.com/gabardcraft/gabardcraft.github.io/releases/download/V1.0/GabardCraft_Launcher.francais.V1.0.zip"
        download>
-       ⬇ Télécharger le launcher (FR)
+       ⬇ Télécharger le launcher (Français)
     </a>
 
     <a class="btn green"
-       href="https://github.com/TONPSEUDO/MinegabardLauncher/releases/download/v1.0/MinegabardLauncher.exe"
+       href="https://github.com/gabardcraft/gabardcraft.github.io/releases/download/V1.0/GabardCraft_Launcher.anglais.V1.0.zip"
        download>
-       ⬇ Télécharger le launcher (EN)
+       ⬇ Télécharger le launcher (Anglais)
     </a>
 
     <a class="btn blue" href="#modpack">
-       📦 Lien du modpack
+       📦 Lien de l'instance
     </a>
   </div>
 
@@ -40,15 +40,15 @@
 </section>
 
 <section class="modpack" id="modpack">
-  <h2>📦 Modpack</h2>
+  <h2>📦 Instance</h2>
 
-  <div class="modpack-box">
+  <div class="instance-box">
     <input type="text"
-      id="modpack-link"
+      id="instance-link"
       value="https://www.dropbox.com/scl/fi/5hh2rr93vlee3w7peg514/GabardCraft.zip?rlkey=kqb0xwq8yzljeuu1r3zqa5cbk&st=eay39bsq&dl=1"
       readonly>
 
-    <button onclick="copyModpack()">📋 Copier le lien</button>
+    <button onclick="copyModpack()">📋 Copier l'instance</button>
   </div>
 </section>
 
@@ -60,14 +60,15 @@
 <script src="patchnotes.js"></script>
 
 <script>
-function copyModpack() {
-  const input = document.getElementById("modpack-link");
+function copyInstance() {
+  const input = document.getElementById("instance-link");
   input.select();
   input.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(input.value);
-  alert("Lien du modpack copié !");
+  alert("Lien de l'instance copié !");
 }
 </script>
 
 </body>
 </html>
+
