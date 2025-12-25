@@ -14,9 +14,21 @@
 
 <section class="top">
   <div class="launchers">
-    <a class="btn green" href="#">Launcher FR</a>
-    <a class="btn green" href="#">Launcher EN</a>
-    <a class="btn blue" href="#">Lien du Modpack</a>
+    <a class="btn green"
+       href="https://github.com/TONPSEUDO/MinegabardLauncher/releases/download/v1.0/MinegabardLauncher.exe"
+       download>
+       ⬇ Télécharger le launcher (FR)
+    </a>
+
+    <a class="btn green"
+       href="https://github.com/TONPSEUDO/MinegabardLauncher/releases/download/v1.0/MinegabardLauncher.exe"
+       download>
+       ⬇ Télécharger le launcher (EN)
+    </a>
+
+    <a class="btn blue" href="#modpack">
+       📦 Lien du modpack
+    </a>
   </div>
 
   <div class="video">
@@ -27,11 +39,35 @@
   </div>
 </section>
 
+<section class="modpack" id="modpack">
+  <h2>📦 Modpack</h2>
+
+  <div class="modpack-box">
+    <input type="text"
+      id="modpack-link"
+      value="https://www.dropbox.com/scl/fi/5hh2rr93vlee3w7peg514/GabardCraft.zip?rlkey=kqb0xwq8yzljeuu1r3zqa5cbk&st=eay39bsq&dl=1"
+      readonly>
+
+    <button onclick="copyModpack()">📋 Copier le lien</button>
+  </div>
+</section>
+
 <section class="patchnotes">
   <h2>📰 Patch Notes</h2>
   <ul id="patch-list"></ul>
 </section>
 
 <script src="patchnotes.js"></script>
+
+<script>
+function copyModpack() {
+  const input = document.getElementById("modpack-link");
+  input.select();
+  input.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(input.value);
+  alert("Lien du modpack copié !");
+}
+</script>
+
 </body>
 </html>
