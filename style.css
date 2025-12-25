@@ -30,13 +30,38 @@ header {
   border-radius: 5px;
 }
 
-.green { border: 2px solid green; color: green; }
-.blue { border: 2px solid blue; color: blue; }
+.green {
+  border: 2px solid green;
+  color: green;
+}
+
+.blue {
+  border: 2px solid blue;
+  color: blue;
+}
 
 .video iframe {
   width: 350px;
   height: 200px;
   border: 2px solid red;
+}
+
+.modpack-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modpack-box input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.modpack-box button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .patchnotes ul {
@@ -49,20 +74,9 @@ header {
 }
 
 .patchnotes a {
-  text-decoration: none;
-  color: black;
-  border: 2px solid blue;
   display: block;
   padding: 10px;
-}
-
-/* Article */
-.article {
-  max-width: 700px;
-  margin: auto;
-}
-
-.back {
-  display: inline-block;
-  margin-top: 20px;
+  border: 2px solid blue;
+  text-decoration: none;
+  color: black;
 }
